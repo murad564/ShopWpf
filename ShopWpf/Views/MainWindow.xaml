@@ -1,0 +1,41 @@
+﻿<Window x:Class="ShopWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopWpf"
+        mc:Ignorable="d"
+        Title="Shop"
+        Height="450" Width="800"
+        Name="Mainwindow">
+    <Grid Background="#F4A261">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <DockPanel>
+            <Button 
+                Name="Total"
+                Click="Total_Click"
+                Background="Transparent" Width="50" BorderThickness="0">
+                <Image Source="C:\User\Source\repos\ShopWpf\ShopWpf\Images\marketicon.png"/>
+            </Button>
+
+
+            <Label Content="Mobile Shop" 
+                   VerticalAlignment="Center" 
+                   Width="400" 
+                   FontSize="60"
+                   HorizontalAlignment="Center"></Label>
+        </DockPanel>
+
+
+        <Grid Grid.Row="1">
+            <ScrollViewer>
+                <WrapPanel  Name="firstrow" VerticalAlignment="Center" HorizontalAlignment="Center">
+                </WrapPanel>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+</Window>
